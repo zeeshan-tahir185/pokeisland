@@ -4,9 +4,11 @@ import { MinusIcon, XMarkIcon } from '@heroicons/vue/24/outline' // Use outline 
 
 <template>
   <div
-    class="h-[64px] w-full bg-[#2B2B2B] rounded-tr-[30px] rounded-tl-[30px] flex justify-start md:justify-center px-[30px] items-center relative"
+    class="h-[64px] w-full bg-[#2B2B2B] rounded-tl-[30px] rounded-tr-[30px] flex justify-start md:justify-center px-[30px] items-center relative right-0 z-50"
   >
-    <h2 class="text-base md:text-xl font-semibold text-white kanit">POKEISLAND LAUNCHER</h2>
+    <h2 class="text-base md:text-xl font-semibold text-white kanit md:!mx-auto">
+      POKEISLAND LAUNCHER
+    </h2>
     <div
       class="flex justify-center items-center absolute right-[30px] md:right-[50px] gap-[20px] md:gap-[50px]"
     >

@@ -16,3 +16,25 @@
 .poppins {
   font-family: 'Poppins', sans-serif;
 }
+.bg_image {
+  background: url('../assets/launcher-bg.svg') no-repeat center center fixed;
+  background-size: cover;
+}
+.gradient_bgc {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+.btn_yellow_gradient {
+  background: linear-gradient(180deg, #ffe400 33.84%, #ff8f00 129.97%);
+  background:
+    linear-gradient(180deg, #ffe400 33.84%, #ff8f00 129.97%),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  border: 3px solid #ffaf03;
+}
+.btn_yellow_gradient span {
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+}
