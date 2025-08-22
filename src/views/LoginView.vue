@@ -3,10 +3,17 @@ import { ref } from 'vue'
 import Header from '@/components/Header.vue'
 
 const closeModal = () => {
-  window.location.href = '/' // agar vue-router use kar rahe ho to: router.push("/")
+  window.location.href = '/'
 }
-function changeModal(){
+function changeModal() {
   window.location.href = '/login/steps'
+}
+
+// selected account ko track karna
+const selectedAccount = ref(null) // yaha null, baad me index set hoga
+
+const selectAccount = (index) => {
+  selectedAccount.value = index
 }
 </script>
 
@@ -34,8 +41,12 @@ function changeModal(){
         <p class="poppins text-white text-[19px]">
           De quel compte souhaitez-vous vous déconnecter ?
         </p>
+
+        <!-- Account 1 -->
         <div
-          class="poppins hover:!bg-[#222222] flex items-start md:!items-center gap-3 !p-3 bg-[#2c2c2c] rounded-lg cursor-pointer flex-col lg:!flex-row"
+          class="poppins flex items-start md:!items-center gap-3 !p-3 rounded-lg cursor-pointer flex-col lg:!flex-row transition-all duration-300"
+          :class="selectedAccount === 0 ? 'bg-[#222222]' : 'bg-[#2c2c2c] hover:bg-[#222222]'"
+          @click="selectAccount(0)"
         >
           <img src="@/assets/setting/profile.svg" alt="profile" class="w-[135px] rounded-md" />
           <div class="flex flex-col justify-start text-start gap-[10px]">
@@ -46,8 +57,12 @@ function changeModal(){
             </p>
           </div>
         </div>
+
+        <!-- Account 2 -->
         <div
-          class="poppins hover:!bg-[#222222] flex items-start md:!items-center gap-3 !p-3 bg-[#2c2c2c] rounded-lg cursor-pointer flex-col lg:!flex-row"
+          class="poppins flex items-start md:!items-center gap-3 !p-3 rounded-lg cursor-pointer flex-col lg:!flex-row transition-all duration-300"
+          :class="selectedAccount === 1 ? 'bg-[#222222]' : 'bg-[#2c2c2c] hover:bg-[#222222]'"
+          @click="selectAccount(1)"
         >
           <img src="@/assets/login/img2.png" alt="profile" class="w-[135px] rounded-md" />
           <div class="flex flex-col justify-start text-start gap-[10px]">
@@ -56,11 +71,13 @@ function changeModal(){
             <p class="text-red-700 text-base">Deconnecté</p>
           </div>
         </div>
+
         <div class="border-b-[3px] border-[#434343] w-full mt-[20px]"></div>
+
         <button
           class="cursor-pointer w-full md:!w-[547px] mt-[20px] h-[67px] rounded-[15px] bg-[#2B8746] flex justify-center items-center font-medium text-base text-white"
-        @click="changeModal"
-          >
+          @click="changeModal"
+        >
           Ajouter un compte
         </button>
       </div>
