@@ -35,7 +35,7 @@ function changeModal(){
           De quel compte souhaitez-vous vous déconnecter ?
         </p>
         <div
-          class="poppins flex items-start md:!items-center gap-3 p-3 bg-[#2c2c2c] rounded-lg cursor-pointer flex-col lg:!flex-row"
+          class="poppins hover:!bg-[#222222] flex items-start md:!items-center gap-3 !p-3 bg-[#2c2c2c] rounded-lg cursor-pointer flex-col lg:!flex-row"
         >
           <img src="@/assets/setting/profile.svg" alt="profile" class="w-[135px] rounded-md" />
           <div class="flex flex-col justify-start text-start gap-[10px]">
@@ -47,7 +47,7 @@ function changeModal(){
           </div>
         </div>
         <div
-          class="poppins flex items-start md:!items-center gap-3 p-3 bg-[#2c2c2c] rounded-lg cursor-pointer flex-col lg:!flex-row"
+          class="poppins hover:!bg-[#222222] flex items-start md:!items-center gap-3 !p-3 bg-[#2c2c2c] rounded-lg cursor-pointer flex-col lg:!flex-row"
         >
           <img src="@/assets/login/img2.png" alt="profile" class="w-[135px] rounded-md" />
           <div class="flex flex-col justify-start text-start gap-[10px]">

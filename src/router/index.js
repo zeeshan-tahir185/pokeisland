@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import SettingView from '@/views/SettingView.vue'
 import LoginView from '@/views/LoginView.vue'
 import LoginStepsView from '@/views/LoginStepsView.vue'
+import LoginButtonView from '@/views/LoginButtonView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -18,9 +19,14 @@ const router = createRouter({
       component: SettingView,
     },
     {
+      path: '/switch-account',
+      name: 'switch-account',
+      component: LoginView,
+    },
+    {
       path: '/login',
       name: 'login',
-      component: LoginView,
+      component: LoginButtonView,
     },
     {
       path: '/login/steps',

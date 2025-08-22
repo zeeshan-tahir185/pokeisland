@@ -33,7 +33,6 @@ const activeTabComponent = computed(() => {
 })
 function openLogin(){
       window.location.href = '/login'
-
 }
 </script>
 

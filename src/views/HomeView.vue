@@ -73,6 +73,9 @@ function fillTo(target, speed) {
 function openSetting(){
   window.location.href = '/settings'
 }
+function handleswitchAcc(){
+  window.location.href = '/switch-account'
+}
 // helper: pause
 function pause(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -115,7 +118,7 @@ function pause(ms) {
                 >
                   <span>Jouer</span>
                 </button>
-                <img :src="profileButton" alt="" class="w-[90px] xl:!w-[20%]" />
+                <img :src="profileButton" alt="" class="w-[90px] xl:!w-[20%] cursor-pointer"  @click="handleswitchAcc" />
                 <i class="fa-solid fa-gear text-white text-[30px] cursor-pointer" @click="openSetting"></i>
               </div>
             </div>
@@ -129,7 +132,11 @@ function pause(ms) {
                 alt=""
                 class="w-[300px] xl:!w-[70%] rounded-[20px] transition-all duration-500"
               />
-              <img :src="img2" alt="" class="w-[110px] xl:!w-[20%]" />
+              <div class="flex flex-col items-center gap-[50px] bg-[#030305] rounded-[30px] p-[30px]">
+                <a href="#"><img src="@/assets/icon1.png" alt="" class="w-[42px] cursor-pointer" /></a>
+                <a href="#"><img src="@/assets/icon2.png" alt="" class="w-[36px] cursor-pointer" /></a>
+                <a href="#"><img src="@/assets/icon3.png" alt="" class="w-[50px] cursor-pointer" /></a>
+              </div>
             </div>
           </div>
 
