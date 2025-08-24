@@ -84,7 +84,7 @@ function pause(ms) {
 
 <template>
   <div
-    class="main-wrapper flex flex-col rounded-[30px] overflow-hidden min-h-[100vh] xl:!min-h-[1000px] max-w-[1920px] md:!mx-auto  transition-all duration-700 ease-in-out"
+    class="main-wrapper flex flex-col  overflow-hidden min-h-[100vh] xl:!min-h-[1000px] max-w-[1920px] md:!mx-auto  transition-all duration-700 ease-in-out"
     :class="{
       'shrink-70': shrinkStage === 1,
       'shrink-40': shrinkStage === 2,
@@ -96,11 +96,11 @@ function pause(ms) {
       <img
         :src="bg"
         alt=""
-        class="absolute top-0 left-0 w-full h-full object-cover z-0 rounded-br-[30px] rounded-bl-[30px]"
+        class="absolute top-0 left-0 w-full h-full object-cover z-0 "
       />
-      <div class="flex items-end min-h-[100vh] xl:!min-h-[1000px] rounded-br-[30px] rounded-bl-[30px] overflow-hidden">
+      <div class="flex items-end min-h-[100vh] xl:!min-h-[1000px]  overflow-hidden">
         <div
-          class="rounded-br-[30px] rounded-bl-[30px] px-5 2xl:!px-[50px] py-[30px] bg-transparent min-h-[50%] gradient_bgc z-40 w-full"
+          class=" px-5 2xl:!px-[50px] py-[30px] bg-transparent min-h-[50%] gradient_bgc z-40 w-full"
         >
           <!-- main section -->
           <div

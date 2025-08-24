@@ -4,7 +4,7 @@ import { MinusIcon, XMarkIcon } from '@heroicons/vue/24/outline' // Use outline 
 
 <template>
   <div
-    class="h-[64px] w-full bg-[#2B2B2B] rounded-tl-[30px] rounded-tr-[30px] flex justify-start md:justify-center px-[30px] items-center relative right-0 z-50"
+    class="h-[64px] w-full bg-[#2B2B2B]  flex justify-start md:justify-center px-[30px] items-center relative right-0 z-50"
   >
     <h2 class="text-base md:text-xl font-semibold text-white kanit md:!mx-auto">
       POKEISLAND LAUNCHER
