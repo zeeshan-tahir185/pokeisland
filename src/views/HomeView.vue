@@ -84,7 +84,7 @@ function pause(ms) {
 
 <template>
   <div
-    class="main-wrapper flex flex-col rounded-[30px] overflow-hidden min-h-[100vh] xl:!min-h-[1000px] px-[20px] md:!px-[5%] max-w-[1920px] md:!mx-auto py-[50px] md:!py-[100px] transition-all duration-700 ease-in-out"
+    class="main-wrapper flex flex-col rounded-[30px] overflow-hidden min-h-[100vh] xl:!min-h-[1000px] max-w-[1920px] md:!mx-auto  transition-all duration-700 ease-in-out"
     :class="{
       'shrink-70': shrinkStage === 1,
       'shrink-40': shrinkStage === 2,
